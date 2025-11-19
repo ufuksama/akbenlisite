@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Akbenli Global</title>
+    <meta name="description" content="Contact Akbenli for horseshoe nail inquiries, technical support, and global distribution opportunities.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation (same as other pages) -->
+    <nav class="navbar">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="logo">
+                    <h1 class="text-2xl font-bold text-charcoal">AKBENLİ</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="lang-switcher">EN <i class="fas fa-chevron-down"></i></button>
+                    <button class="mobile-menu-toggle md:hidden">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="products.html" class="mobile-nav-link">Products</a>
+            <a href="about.html" class="mobile-nav-link">About Us</a>
+            <a href="contact.html" class="mobile-nav-link active">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold text-white">Contact Us</h1>
+            <p class="text-xl text-gray-200 mt-4">Multiple ways to reach our global team</p>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="contact-options py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- General Inquiry Form -->
+                <div class="contact-card">
+                    <div class="contact-card-header">
+                        <i class="fas fa-envelope text-3xl text-orange mb-4"></i>
+                        <h2 class="text-2xl font-semibold">General Inquiry</h2>
+                        <p class="text-gray-600">For general questions and information requests</p>
+                    </div>
+                    <form class="contact-form" id="generalInquiryForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country *</label>
+                            <select id="country" name="country" required>
+                                <option value="">Select Country</option>
+                                <option value="US">United States</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="DE">Germany</option>
+                                <option value="FR">France</option>
+                                <option value="TR">Turkey</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full">Send Inquiry</button>
+                    </form>
+                </div>
+
+                <!-- Technical Support -->
+                <div class="contact-card">
+                    <div class="contact-card-header">
+                        <i class="fas fa-tools text-3xl text-orange mb-4"></i>
+                        <h2 class="text-2xl font-semibold">Technical Support</h2>
+                        <p class="text-gray-600">For product specifications and technical questions</p>
+                    </div>
+                    <div class="technical-support-info">
+                        <div class="support-item">
+                            <i class="fas fa-phone text-orange"></i>
+                            <div>
+                                <h4>Phone Support</h4>
+                                <p>+90 123 456 7890</p>
+                                <small>Mon-Fri, 9:00-18:00 TRT</small>
+                            </div>
+                        </div>
+                        <div class="support-item">
+                            <i class="fas fa-envelope text-orange"></i>
+                            <div>
+                                <h4>Email Support</h4>
+                                <p>tech@akbenli.com</p>
+                                <small>Response within 24 hours</small>
+                            </div>
+                        </div>
+                        <div class="support-item">
+                            <i class="fas fa-download text-orange"></i>
+                            <div>
+                                <h4>Resources</h4>
+                                <a href="#" class="text-orange hover:underline">Technical Documents</a><br>
+                                <a href="#" class="text-orange hover:underline">Size Guide PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Representatives -->
+    <section class="regional-representatives py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-12">Regional Representatives</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="representative-card">
+                    <div class="rep-region">Europe</div>
+                    <h3 class="text-xl font-semibold mb-2">Hans Mueller</h3>
+                    <p class="text-gray-600 mb-2">European Sales Manager</p>
+                    <p class="text-sm">
+                        <i class="fas fa-phone text-orange mr-2"></i>+49 123 456 789<br>
+                        <i class="fas fa-envelope text-orange mr-2"></i>hans@akbenli.eu
+                    </p>
+                    <p class="text-sm text-gray-600 mt-2">Germany, Austria, Switzerland, Benelux</p>
+                </div>
+                <div class="representative-card">
+                    <div class="rep-region">Americas</div>
+                    <h3 class="text-xl font-semibold mb-2">John Smith</h3>
+                    <p class="text-gray-600 mb-2">North American Director</p>
+                    <p class="text-sm">
+                        <i class="fas fa-phone text-orange mr-2"></i>+1 234 567 8900<br>
+                        <i class="fas fa-envelope text-orange mr-2"></i>john@akbenli.com
+                    </p>
+                    <p class="text-sm text-gray-600 mt-2">USA, Canada, Mexico</p>
+                </div>
+                <div class="representative-card">
+                    <div class="rep-region">Asia-Pacific</div>
+                    <h3 class="text-xl font-semibold mb-2">Li Wei</h3>
+                    <p class="text-gray-600 mb-2">Asia-Pacific Manager</p>
+                    <p class="text-sm">
+                        <i class="fas fa-phone text-orange mr-2"></i>+86 123 4567 8900<br>
+                        <i class="fas fa-envelope text-orange mr-2"></i>li@akbenli.asia
+                    </p>
+                    <p class="text-sm text-gray-600 mt-2">China, Japan, Australia, New Zealand</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Quote Section -->
+    <section class="quick-quote py-16">
+        <div class="container mx-auto px-4">
+            <div class="quote-card">
+                <h2 class="text-3xl font-bold text-center mb-8">Quick Quote Request</h2>
+                <form class="quote-form" id="quoteForm">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="form-group">
+                            <label for="quoteName">Full Name *</label>
+                            <input type="text" id="quoteName" name="quoteName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quoteEmail">Email Address *</label>
+                            <input type="email" id="quoteEmail" name="quoteEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quoteProduct">Product *</label>
+                            <select id="quoteProduct" name="quoteProduct" required>
+                                <option value="">Select Product</option>
+                                <option value="classic">Classic Series</option>
+                                <option value="safari">Safari Series</option>
+                                <option value="sport">Sport Series</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quoteQuantity">Quantity *</label>
+                            <input type="number" id="quoteQuantity" name="quoteQuantity" min="1000" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quoteCountry">Delivery Country *</label>
+                            <select id="quoteCountry" name="quoteCountry" required>
+                                <option value="">Select Country</option>
+                                <option value="US">United States</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="DE">Germany</option>
+                                <option value="FR">France</option>
+                                <option value="TR">Turkey</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quoteTimeline">Delivery Timeline</label>
+                            <select id="quoteTimeline" name="quoteTimeline">
+                                <option value="standard">Standard (4-6 weeks)</option>
+                                <option value="expedited">Expedited (2-3 weeks)</option>
+                                <option value="rush">Rush (1 week)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group mt-6">
+                        <label for="quoteMessage">Additional Requirements</label>
+                        <textarea id="quoteMessage" name="quoteMessage" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full mt-6">Request Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Direct Contact Details -->
+    <section class="direct-contact py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-12">Direct Contact Information</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="contact-method">
+                    <i class="fas fa-map-marker-alt text-4xl text-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Headquarters</h3>
+                    <p>Akbenli Horseshoe Nails<br>
+                    Istanbul Organized Industrial Zone<br>
+                    1234 Street, No: 56<br>
+                    34906 Istanbul, Turkey</p>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-phone text-4xl text-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Phone Numbers</h3>
+                    <p>General: +90 123 456 7890<br>
+                    Sales: +90 123 456 7891<br>
+                    Support: +90 123 456 7892<br>
+                    <small class="text-gray-600">Mon-Fri, 9:00-18:00 TRT</small></p>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-envelope text-4xl text-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Email Addresses</h3>
+                    <p>General: info@akbenli.com<br>
+                    Sales: sales@akbenli.com<br>
+                    Support: support@akbenli.com<br>
+                    <small class="text-gray-600">Response within 24 hours</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">AKBENLİ</h3>
+                    <p class="text-gray-400">Turkey's premier horseshoe nail manufacturer, delivering precision-engineered equine hardware worldwide.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="products.html#classic">Classic Series</a></li>
+                        <li><a href="products.html#safari">Safari Series</a></li>
+                        <li><a href="products.html#sport">Sport Series</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#certifications">Certifications</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Info</h4>
+                    <p class="text-gray-400">
+                        <i class="fas fa-phone mr-2"></i>+90 123 456 7890<br>
+                        <i class="fas fa-envelope mr-2"></i>info@akbenli.com<br>
+                        <i class="fas fa-map-marker-alt mr-2"></i>Istanbul, Turkey
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Akbenli. All rights reserved. | <a href="#" class="hover:text-orange">Privacy Policy</a> | <a href="#" class="hover:text-orange">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

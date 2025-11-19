@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Akbenli Horseshoe Nails</title>
+    <meta name="description" content="Precision engineered horseshoe nails for professional farriers. Classic, Safari, and Sport series available worldwide.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    <nav class="navbar">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="logo">
+                    <h1 class="text-2xl font-bold text-charcoal">AKBENLİ</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link active">Products</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="lang-switcher">EN <i class="fas fa-chevron-down"></i></button>
+                    <button class="mobile-menu-toggle md:hidden">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="products.html" class="mobile-nav-link active">Products</a>
+            <a href="about.html" class="mobile-nav-link">About Us</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold text-white">Precision Engineered Horseshoe Nails</h1>
+            <p class="text-xl text-gray-200 mt-4">Professional-grade nails for every farrier application</p>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-wrap gap-4 items-center">
+                <div class="filter-group">
+                    <label class="filter-label">Category:</label>
+                    <select class="filter-select">
+                        <option value="">All Categories</option>
+                        <option value="classic">Classic Series</option>
+                        <option value="safari">Safari Series</option>
+                        <option value="sport">Sport Series</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Size:</label>
+                    <select class="filter-select">
+                        <option value="">All Sizes</option>
+                        <option value="3-4">3-4</option>
+                        <option value="5-6">5-6</option>
+                        <option value="7-8">7-8</option>
+                        <option value="9-10">9-10</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Application:</label>
+                    <select class="filter-select">
+                        <option value="">All Applications</option>
+                        <option value="pleasure">Pleasure Riding</option>
+                        <option value="sport">Sport/Racing</option>
+                        <option value="work">Working Horses</option>
+                    </select>
+                </div>
+                <button class="btn-secondary ml-auto">
+                    <i class="fas fa-download mr-2"></i>Download Catalog
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-grid py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+                
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300" alt="Classic Nail 3-4">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Nail 3-4</h3>
+                        <p class="product-size">Size: 3-4 (3.5mm)</p>
+                        <p class="product-length">Length: 47.5mm</p>
+                        <div class="product-actions">
+                            <button class="btn-primary btn-sm">Request Quote</button>
+                            <button class="btn-secondary btn-sm">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300" alt="Classic Nail 5-6">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Nail 5-6</h3>
+                        <p class="product-size">Size: 5-6 (4.5mm)</p>
+                        <p class="product-length">Length: 52.0mm</p>
+                        <div class="product-actions">
+                            <button class="btn-primary btn-sm">Request Quote</button>
+                            <button class="btn-secondary btn-sm">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=300" alt="Safari Nail 7-8">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Safari Nail 7-8</h3>
+                        <p class="product-size">Size: 7-8 (5.2mm)</p>
+                        <p class="product-length">Length: 58.5mm</p>
+                        <div class="product-actions">
+                            <button class="btn-primary btn-sm">Request Quote</button>
+                            <button class="btn-secondary btn-sm">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=300" alt="Sport Nail 9-10">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Sport Nail 9-10</h3>
+                        <p class="product-size">Size: 9-10 (6.0mm)</p>
+                        <p class="product-length">Length: 65.0mm</p>
+                        <div class="product-actions">
+                            <button class="btn-primary btn-sm">Request Quote</button>
+                            <button class="btn-secondary btn-sm">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional products would continue here... -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Size Guide Modal -->
+    <div id="sizeGuideModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Nail Size Guide</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <table class="size-table">
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>Shaft Diameter</th>
+                            <th>Length</th>
+                            <th>Typical Use</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3-4</td>
+                            <td>3.5mm</td>
+                            <td>47.5mm</td>
+                            <td>Ponies, light horses</td>
+                        </tr>
+                        <tr>
+                            <td>5-6</td>
+                            <td>4.5mm</td>
+                            <td>52.0mm</td>
+                            <td>Medium horses</td>
+                        </tr>
+                        <tr>
+                            <td>7-8</td>
+                            <td>5.2mm</td>
+                            <td>58.5mm</td>
+                            <td>Large horses, draft crosses</td>
+                        </tr>
+                        <tr>
+                            <td>9-10</td>
+                            <td>6.0mm</td>
+                            <td>65.0mm</td>
+                            <td>Draft horses</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">AKBENLİ</h3>
+                    <p class="text-gray-400">Turkey's premier horseshoe nail manufacturer, delivering precision-engineered equine hardware worldwide.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="products.html#classic">Classic Series</a></li>
+                        <li><a href="products.html#safari">Safari Series</a></li>
+                        <li><a href="products.html#sport">Sport Series</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#certifications">Certifications</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Info</h4>
+                    <p class="text-gray-400">
+                        <i class="fas fa-phone mr-2"></i>+90 123 456 7890<br>
+                        <i class="fas fa-envelope mr-2"></i>info@akbenli.com<br>
+                        <i class="fas fa-map-marker-alt mr-2"></i>Istanbul, Turkey
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Akbenli. All rights reserved. | <a href="#" class="hover:text-orange">Privacy Policy</a> | <a href="#" class="hover:text-orange">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Akbenli Company</title>
+    <meta name="description" content="Learn about Akbenli, Turkey's first horseshoe nail manufacturer. Our heritage, manufacturing excellence, and global commitment.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation (same as other pages) -->
+    <nav class="navbar">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="logo">
+                    <h1 class="text-2xl font-bold text-charcoal">AKBENLİ</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="about.html" class="nav-link active">About Us</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="lang-switcher">EN <i class="fas fa-chevron-down"></i></button>
+                    <button class="mobile-menu-toggle md:hidden">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="products.html" class="mobile-nav-link">Products</a>
+            <a href="about.html" class="mobile-nav-link active">About Us</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200');">
+        <div class="hero-content">
+            <div class="container mx-auto px-4">
+                <h1 class="hero-title">Crafting Excellence Since 1998</h1>
+                <p class="hero-subtitle">Turkey's first and only horseshoe nail manufacturer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="company-story py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="section-title mb-6">Our Heritage</h2>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Founded in 1998, Akbenli emerged from a vision to establish Turkey's first specialized horseshoe nail manufacturing facility. What began as a small workshop has grown into a global enterprise serving farriers across 40+ countries.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Our founder, Mr. Ahmet Akbenli, recognized the need for high-quality, locally manufactured horseshoe nails that could compete with international standards. This vision drove us to invest in state-of-the-art forging technology and quality control systems.
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        Today, we remain the only Turkish company dedicated exclusively to horseshoe nail production, carrying forward a legacy of precision craftsmanship and manufacturing excellence.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600" alt="Akbenli Manufacturing Facility" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-12">Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">1998</div>
+                    <div class="timeline-content">
+                        <h3>Company Founded</h3>
+                        <p>Akbenli established as Turkey's first horseshoe nail manufacturer</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2002</div>
+                    <div class="timeline-content">
+                        <h3>ISO Certification</h3>
+                        <p>Achieved ISO 9001 quality management certification</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2008</div>
+                    <div class="timeline-content">
+                        <h3>International Expansion</h3>
+                        <p>Began exporting to European markets</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2015</div>
+                    <div class="timeline-content">
+                        <h3>Global Reach</h3>
+                        <p>Products available in 40+ countries worldwide</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h3>Innovation Award</h3>
+                        <p>Recognized for manufacturing excellence in equine industry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manufacturing Excellence -->
+    <section class="manufacturing-excellence py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-12">Manufacturing Excellence</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="excellence-card">
+                    <div class="excellence-icon">
+                        <i class="fas fa-industry text-4xl text-orange"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Advanced Forging</h3>
+                    <p>Computer-controlled forging equipment ensures consistent quality and precision in every nail we produce.</p>
+                </div>
+                <div class="excellence-card">
+                    <div class="excellence-icon">
+                        <i class="fas fa-microscope text-4xl text-orange"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Quality Testing</h3>
+                    <p>Every batch undergoes rigorous testing including hardness, tensile strength, and dimensional accuracy checks.</p>
+                </div>
+                <div class="excellence-card">
+                    <div class="excellence-icon">
+                        <i class="fas fa-shield-alt text-4xl text-orange"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Material Excellence</h3>
+                    <p>We use only premium Swedish steel, known for its superior quality and consistent performance characteristics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="certifications py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-12">Certifications & Standards</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="certification-card">
+                    <div class="certification-badge">
+                        <i class="fas fa-certificate text-5xl text-orange"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">ISO 9001:2015</h3>
+                    <p class="text-gray-600">Quality Management System</p>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-badge">
+                        <i class="fas fa-award text-5xl text-orange"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">CE Marking</h3>
+                    <p class="text-gray-600">European Conformity</p>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-badge">
+                        <i class="fas fa-leaf text-5xl text-orange"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">ISO 14001</h3>
+                    <p class="text-gray-600">Environmental Management</p>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-badge">
+                        <i class="fas fa-hard-hat text-5xl text-orange"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">OHSAS 18001</h3>
+                    <p class="text-gray-600">Occupational Health & Safety</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="leadership-team py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-12">Leadership Team</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300" alt="Ahmet Akbenli" class="rounded-full">
+                    </div>
+                    <h3 class="text-xl font-semibold mt-4">Ahmet Akbenli</h3>
+                    <p class="text-orange">Founder & CEO</p>
+                    <p class="text-gray-600 mt-2">25+ years of experience in metallurgy and manufacturing</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300" alt="Elif Akbenli" class="rounded-full">
+                    </div>
+                    <h3 class="text-xl font-semibold mt-4">Elif Akbenli</h3>
+                    <p class="text-orange">Operations Director</p>
+                    <p class="text-gray-600 mt-2">Leading our manufacturing excellence initiatives</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300" alt="Mehmet Yilmaz" class="rounded-full">
+                    </div>
+                    <h3 class="text-xl font-semibold mt-4">Mehmet Yilmaz</h3>
+                    <p class="text-orange">Quality Manager</p>
+                    <p class="text-gray-600 mt-2">Ensuring every nail meets our high standards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Reach -->
+    <section class="global-reach py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="section-title mb-6">Global Presence</h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        From our headquarters in Istanbul, Turkey, we serve farriers and distributors across six continents. Our global reach is a testament to the quality and reliability of our products.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="stat-item">
+                            <h3 class="text-3xl font-bold text-orange">40+</h3>
+                            <p class="text-gray-600">Countries Served</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="text-3xl font-bold text-orange">200+</h3>
+                            <p class="text-gray-600">Distributors Worldwide</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="text-3xl font-bold text-orange">50M+</h3>
+                            <p class="text-gray-600">Nails Annually</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="text-3xl font-bold text-orange">99.8%</h3>
+                            <p class="text-gray-600">Customer Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600" alt="Global Distribution Network" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">AKBENLİ</h3>
+                    <p class="text-gray-400">Turkey's premier horseshoe nail manufacturer, delivering precision-engineered equine hardware worldwide.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="products.html#classic">Classic Series</a></li>
+                        <li><a href="products.html#safari">Safari Series</a></li>
+                        <li><a href="products.html#sport">Sport Series</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#certifications">Certifications</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Info</h4>
+                    <p class="text-gray-400">
+                        <i class="fas fa-phone mr-2"></i>+90 123 456 7890<br>
+                        <i class="fas fa-envelope mr-2"></i>info@akbenli.com<br>
+                        <i class="fas fa-map-marker-alt mr-2"></i>Istanbul, Turkey
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Akbenli. All rights reserved. | <a href="#" class="hover:text-orange">Privacy Policy</a> | <a href="#" class="hover:text-orange">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
